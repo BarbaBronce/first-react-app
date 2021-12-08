@@ -6,7 +6,7 @@ import BlogCard from './BlogCard';
 import { isArrayEmpty } from './Utils';
 
 class App extends React.Component {
-
+//Created state
   state = {
     showBlogs : true,
     blogArr: [{
@@ -26,7 +26,7 @@ class App extends React.Component {
     likeCount: 0
   }]
   }
-
+  //Creating a function and passing as props
   onLikeBtnClick = (pos) =>{
    //  alert('Like Button Clicked at pos => ' + pos)
    const updatedBlogList = this.state.blogArr;
